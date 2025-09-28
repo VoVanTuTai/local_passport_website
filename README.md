@@ -4,6 +4,8 @@
 cd src/local_passport_website
 2. Cài đặt dependencies bash Copy code: npm install express Basic Auth Chạy server bash Copy code: node app.js
 Kiểm tra API
+trước khi đăng ký không có user nào trong mongo
+<img width="960" height="540" alt="3000" src="https://github.com/VoVanTuTai/local_passport_website/blob/main/Images_report/local_passport_00.png" />
 POST: http://localhost:3000/register
 đăng ký với nội dung "{"username":"VoVanTuTai", "password":"12345"}"
 <img width="960" height="540" alt="3000" src="https://github.com/VoVanTuTai/local_passport_website/blob/main/Images_report/register_web.png" />
@@ -16,7 +18,7 @@ POST: http://localhost:3000/login
 <img width="960" height="540" alt="3000" src="https://github.com/VoVanTuTai/local_passport_website/blob/main/Images_report/login.png" />
 đăng nhập thành công sẽ chuyển sang trang welcome + tên user có chữ logout GET: http://localhost:3000/profile
 <img width="960" height="540" alt="3000" src="https://github.com/VoVanTuTai/local_passport_website/blob/main/Images_report/login_success.png" />
-lick logout http://localhost:3000/logout
+lick logout http://localhost:3000/logout sẽ quay về trang đăng nhập (login)
 <img width="960" height="540" alt="3000" src="https://github.com/VoVanTuTai/local_passport_website/blob/main/Images_report/logout.png" />
 
 
